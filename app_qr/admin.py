@@ -11,7 +11,7 @@ class TipoQrAdmin(admin.ModelAdmin):
 
 @admin.register(Qr)
 class QrAdmin(admin.ModelAdmin):
-    list_display = ('id', 'tipo', 'texto', 'descripcion', 'codigo_base64', 'is_active')
+    list_display = ('id', 'tipo', 'texto', 'descripcion', 'base_url', 'codigo_base64', 'is_active')
     list_filter = ('tipo', 'is_active')
 
 
