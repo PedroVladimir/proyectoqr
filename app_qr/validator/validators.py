@@ -2,7 +2,7 @@ from django.core.exceptions import ValidationError
 
 def validate_texto_length(value):
     if not (4 <= len(value) <= 40):
-        raise ValidationError('El texto debe tener entre 4 y 20 caracteres.')
+        raise ValidationError('El texto debe tener entre 4 y 40 caracteres.')
 
 def validate_descripcion_length(value):
     if not (4 <= len(value) <= 50):
